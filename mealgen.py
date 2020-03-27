@@ -12,10 +12,10 @@ class Wochentag(object):
         return f"================\n{self.frühstück}\n{self.mittag}\n{self.abend}\n{self.snack}\n================\n"
 
 def genmeal(mon_meal, genMonday):
-    f_meals = [line.rstrip() for line in open("frühstück.txt")]
-    m_meals = [line.rstrip() for line in open("mittagessen.txt")]
-    a_meals = [line.rstrip() for line in open("abendessen.txt")]
-    s_meals = [line.rstrip() for line in open("snacks.txt")]
+    f_meals = [line.rstrip() for line in open("gerichte/frühstück.txt")]
+    m_meals = [line.rstrip() for line in open("gerichte/mittagessen.txt")]
+    a_meals = [line.rstrip() for line in open("gerichte/abendessen.txt")]
+    s_meals = [line.rstrip() for line in open("gerichte/snacks.txt")]
 
     if genMonday:
         mittag = random.choice(m_meals)
